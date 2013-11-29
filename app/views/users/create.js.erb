@@ -1,0 +1,3 @@
+<% broadcast '/users' do %>
+  $("#listing").html("<%= escape_javascript(render :partial => 'listing', locals: {users: @users}) %>");
+<% end %>
