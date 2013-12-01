@@ -5,3 +5,7 @@ A sample application to Use [faye](http://faye.jcoglan.com/) as real time update
 	gem install foreman
 	foreman start
 
+
+A sample application is here http://ankrealtime.herokuapp.com/
+
+Open this on 2 diff browsers/cell and see real time updates
