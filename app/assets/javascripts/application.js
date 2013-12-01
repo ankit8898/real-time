@@ -12,13 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require private_pub
 //= require turbolinks
 //= require_tree .
 
-
-$(function(){
-  var faye = new Faye.Client('http://localhost:9292/faye');
-  faye.subscribe("/users", function(data) {
-    eval(data);
-  });
-});

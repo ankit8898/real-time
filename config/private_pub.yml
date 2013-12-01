@@ -1,0 +1,10 @@
+development:
+  server: "http://localhost:9292/faye"
+  secret_token: "secret"
+test:
+  server: "http://localhost:9292/faye"
+  secret_token: "secret"
+production:
+  server: "http://fayserverank.herokuapp.com/faye"
+  secret_token: "ankit"
+  signature_expiration: 3600 # one hour

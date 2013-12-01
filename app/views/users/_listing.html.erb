@@ -1,6 +1,6 @@
 <h1>Listing users</h1>
 
-<table>
+<table id='wow'>
   <thead>
     <tr>
       <th>Name</th>
@@ -12,11 +12,11 @@
 
   <tbody>
     <% users.each do |user| %>
-      <tr>
+      <tr id=<%=user.id%> class='ank'>
         <td><%= user.name %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', user, method: :delete,remote: true, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
